@@ -23,9 +23,9 @@ def main():
 def logo():
   print """%s
   __  __ ___    ___                                   
- |  \/  |   \  / __|_ __  __ _ _ __  _ __  ___ _ _ ___ %sAuthor by %sAcinakongame11%s
- | |\/| | |) | \__ \ '_ \/ _` | '  \| '  \/ -_) '_(_-< %sGithub %sSubscribe My Channel Acinakongame%s
- |_|  |_|___/  |___/ .__/\__,_|_|_|_|_|_|_\___|_| /__/ %sTeam %sanoncybfakeplayers%s
+ |  \/  |   \  / __|_ __  __ _ _ __  _ __  ___ _ _ ___ %sAuthor by %sAcinakongame%s
+ | |\/| | |) | \__ \ '_ \/ _` | '  \| '  \/ -_) '_(_-< %sGithub %sgithub.com/dhimaser/MDSpammers%s
+ |_|  |_|___/  |___/ .__/\__,_|_|_|_|_|_|_\___|_| /__/ %sYoutube %Acinakongame%s
                    |_|                                 %sTools spam dengan 29 spammers"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
 #-------------------------------Input Function------------------------------------------
 def input():
