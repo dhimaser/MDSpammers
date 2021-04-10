@@ -23,11 +23,15 @@ def main():
 def logo():
   print """%s
                                   
-   __ _ _ __  _ __  ___ _ _ ___      %sAuthor by %sTokicoy%s
-  / _` | '  \| '  \/ -_) '_(_-<      %sGithub %sNothing%s
-  \__,_|_|_|_|_|_|_\___|_| /__/      %sYoutube %sAcinakongame%s
-   Anggur Merah Cap Orang Tua        %sTools Bocil HECK ID Free Fire"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
+   __ _ _ __  _ __  ___ _ _ ___      
+  / _` | '  \| '  \/ -_) '_(_-<      
+  \__,_|_|_|_|_|_|_\___|_| /__/      
+   Anggur Merah Cap Orang Tua        
 
+%sAuthor by %sTokicoy%s
+%sGithub %sNothing%s
+%sYoutube %sAcinakongame%s
+%sTools Bocil HECK ID Free Fire"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
 #-------------------------------Input Function------------------------------------------
 def input():
   global nom
