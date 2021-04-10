@@ -135,7 +135,7 @@ def pinjamindo():
  if json.loads(hu.text)["msg"] == 'success':
   sukses("14","bocil sms","pinjamindo")
  else:
-  gagal("14",sbocil sms","pinjamindo")
+  gagal("14","bocil sms","pinjamindo")
 def uangpintar():
  hd={
 'Host':'www.uangpintar.id:7092',
