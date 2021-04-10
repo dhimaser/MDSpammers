@@ -23,10 +23,10 @@ def main():
 def logo():
   print """%s
   ___                                   
- / __|_ __  __ _ _ __  _ __  ___ _ _ ___ %sAuthor by %sAcinakongame%s
+ / __|_ __  __ _ _ __  _ __  ___ _ _ ___ %sAuthor by %sTokicoy%s
  \__ \ '_ \/ _` | '  \| '  \/ -_) '_(_-< %sGithub %sgithub.com/dhimaser/MDSpammers%s
  |___/ .__/\__,_|_|_|_|_|_|_\___|_| /__/ %sYoutube %sAcinakongame%s
-     |_|                                 %sTools spam dengan 29 spammers"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
+     |_|                                 %sTools HECK ID Free Fire"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
 #-------------------------------Input Function------------------------------------------
 def input():
   global nom
