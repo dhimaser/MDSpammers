@@ -23,10 +23,7 @@ def main():
 def logo():
   print """%s
                                   
-   __ _ _ __  _ __  ___ _ _ ___      
-  / _` | '  \| '  \/ -_) '_(_-<      
-  \__,_|_|_|_|_|_|_\___|_| /__/      
-   Anggur Merah Cap Orang Tua        
+           
 
 %sAuthor by %sTokicoy%s
 %sGithub %sNothing%s
