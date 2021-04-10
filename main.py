@@ -22,33 +22,33 @@ def main():
 #--------------------------------Banner/LOGO------------------------------------------
 def logo():
   print """%s
-  __  __ ___    ___                                   
- |  \/  |   \  / __|_ __  __ _ _ __  _ __  ___ _ _ ___ %sAuthor by %sAcinakongame%s
- | |\/| | |) | \__ \ '_ \/ _` | '  \| '  \/ -_) '_(_-< %sGithub %sgithub.com/dhimaser/MDSpammers%s
- |_|  |_|___/  |___/ .__/\__,_|_|_|_|_|_|_\___|_| /__/ %sYoutube %sAcinakongame%s
-                   |_|                                 %sTools spam dengan 29 spammers"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
+  ___                                   
+ / __|_ __  __ _ _ __  _ __  ___ _ _ ___ %sAuthor by %sAcinakongame%s
+ \__ \ '_ \/ _` | '  \| '  \/ -_) '_(_-< %sGithub %sgithub.com/dhimaser/MDSpammers%s
+ |___/ .__/\__,_|_|_|_|_|_|_\___|_| /__/ %sYoutube %sAcinakongame%s
+     |_|                                 %sTools spam dengan 29 spammers"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
 #-------------------------------Input Function------------------------------------------
 def input():
   global nom
-  nom = raw_input("%s[%s?%s] %sMasukkan nomor target (8888xx) : "%(pu,me,pu,pu))
+  nom = raw_input("%s[%s?%s] %sMasukkan nomor id target (8888xx) : "%(pu,me,pu,pu))
   if len(nom) < 5:
-    print "%s[%s!%s] %sMasukkan nomor target dengan benar!!"%(pu,me,pu,me)
+    print "%s[%s!%s] %sMasukkan nomor id target dengan benar!!"%(pu,me,pu,me)
     input()
   elif nom.startswith(tuple(["62","+62","0"])):
-    print "%s[%s!%s] %sMasukkan nomor tanpa 62, +62, ataupun 0\n%s[%s!%s] %sContoh : 85877162199"%(pu,me,pu,ku,pu,me,pu,ku)
+    print "%s[%s!%s] %sMasukkan nomor tanpa dengan benar ataupun 0\n%s[%s!%s] %sContoh : 85877162199"%(pu,me,pu,ku,pu,me,pu,ku)
     input()
   else:
     global jum
-    jum = int(raw_input("%s[%s?%s] %sMasukkan jumlah spam : "%(pu,me,pu,pu)))
+    jum = int(raw_input("%s[%s?%s] %sMasukkan Angka 1-29 : "%(pu,me,pu,pu)))
     main()
 #-------------------------------SPAM Function-------------------------------------------
 def asakita():
   data={'username':'62'+nom}
   h = requests.post("https://www.asakita.id/api/auth/register/otp",headers={'User-Agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'},data=data).text
   if 'MOBILE' in h:
-   sukses("1","sms","asakita")
+   sukses("1","data","freefire")
   else:
-   gagal("1","sms","asakita")
+   gagal("1","data","freefire")
 def sunchila():
 #  hih = requests.get("https://m.sunchila.com/api/generateAuthCode.ajax?mobile=0"+nom+"&countryCode=62")
  # if json.loads(hih.text)["result"] == 'true':
