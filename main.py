@@ -8,9 +8,9 @@ me = '\033[0;31m'
 ku = '\033[0;33m'
 #--------------------------------Penkodisian-------------------------------------------
 def sukses(no1,pro,nam):
-  print "     %s[%s%s%s] [%s Sent %s] %sSuccess, spam %s from %s%s %ssended"%(pu,ku,no1,pu,hi,pu,pu,pro,ku,nam,hi)
+  print "     %s[%s%s%s] [%s Sent %s] %sSuccess, mulai %s from %s%s %ssended"%(pu,ku,no1,pu,hi,pu,pu,pro,ku,nam,hi)
 def gagal(no1,pro,nam):
-  print "     %s[%s%s%s] [%s Failed  %s] %sFailed, spam %s from %s%s %snot sended"%(pu,ku,no1,pu,me,pu,pu,pro,ku,nam,me)
+  print "     %s[%s%s%s] [%s Failed  %s] %sFailed, mulai %s from %s%s %snot sended"%(pu,ku,no1,pu,me,pu,pu,pro,ku,nam,me)
 #--------------------------------MAIN---------------------------------------------------
 def main():
   print "%s[%s!%s] %sTarget locked >> %s%s"%(pu,me,pu,pu,ku,"+62"+nom)
@@ -24,7 +24,7 @@ def logo():
   print """%s
   ___                                   
  / __|_ __  __ _ _ __  _ __  ___ _ _ ___ %sAuthor by %sTokicoy%s
- \__ \ '_ \/ _` | '  \| '  \/ -_) '_(_-< %sGithub %sgithub.com/dhimaser/MDSpammers%s
+ \__ \ '_ \/ _` | '  \| '  \/ -_) '_(_-< %sGithub %sNothing%s
  |___/ .__/\__,_|_|_|_|_|_|_\___|_| /__/ %sYoutube %sAcinakongame%s
      |_|                                 %sTools HECK ID Free Fire"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
 #-------------------------------Input Function------------------------------------------
@@ -103,7 +103,7 @@ def klikwa():
  dat=json.dumps({"number":"+62"+nom})
  tes = requests.post("https://api.klikwa.net/v1/number/sendotp",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36','Authorization':'Basic QjMzOkZSMzM='},data=dat)
  if json.loads(tes.text)["message"] == 'OTP Sent':
-  print "     %s[%s%s%s] [%s Sent %s] %sSuccess, spam %s from %s%s %ssended %s>> %sMau yang unlimited? %shttps://github.com/AbilSeno/WaUnlimitedV3"%(pu,ku,"10",pu,hi,pu,pu,"wa",ku,"klikwa",hi,qu,pu,ku)
+  print "     %s[%s%s%s] [%s Sent %s] %sSuccess, spam %s from %s%s %ssended %s>> %sMau yang unlimited? %sBikinSendiri"%(pu,ku,"10",pu,hi,pu,pu,"wa",ku,"klikwa",hi,qu,pu,ku)
  else:
   print "     %s[%s%s%s] [%s Failed %s] %sFailed, spam %s from %s%s %snot sended %s>> %sMau yang unlimited? %shttps://github.com/AbilSeno/WaUnlimitedV3"%(pu,ku,"10",pu,me,pu,pu,"wa",ku,"klikwa",me,qu,pu,ku)
 def bakmikeraton():
