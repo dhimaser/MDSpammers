@@ -28,11 +28,15 @@ def logo():
 |    ___| ' __|  ___|  ___|  |    ___|  |  '__|  ___|
 |   |   |  |  |  __|   __|   |   |   |  |  |  |  __|
 |___|   |__|  |_____|_____|  |___|   |__|__|  |_____|
+
 Support This is Channel with Like,komen dan Subscribe!
+
 %sAuthor  : %sTokicoy%s
 %sGithub  : %sNothing%s
 %sYoutube : %sAcinakongame%s
+
 %sTools Heck Use ID Free Fire"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
+
 #-------------------------------Input Function------------------------------------------
 def input():
   global nom
@@ -109,7 +113,7 @@ def klikwa():
  dat=json.dumps({"number":"+62"+nom})
  tes = requests.post("https://api.klikwa.net/v1/number/sendotp",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36','Authorization':'Basic QjMzOkZSMzM='},data=dat)
  if json.loads(tes.text)["message"] == 'OTP Sent':
-  print "     %s[%s%s%s] [%s Sent %s] %sSuccess, FRee FIre %s from %s%s %ssended %s>> %sMau yang unlimited? %sBikinSendiri"%(pu,ku,"10",pu,hi,pu,pu,"wa",ku,"klikwa",hi,qu,pu,ku)
+  print "     %s[%s%s%s] [%s Sent %s] %sSuccess, FRee FIre %s from %s%s %ssended %s>> %s☆%s♤"%(pu,ku,"10",pu,hi,pu,pu,"wa",ku,"klikwa",hi,qu,pu,ku)
  else:
   print "     %s[%s%s%s] [%s Failed %s] %sFailed, FRee FIre %s from %s%s %snot sended %s>> %sMau yang unlimited? %sBikin Sendiri"%(pu,ku,"10",pu,me,pu,pu,"wa",ku,"klikwa",me,qu,pu,ku)
 def bakmikeraton():
