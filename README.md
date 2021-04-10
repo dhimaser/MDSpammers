@@ -1,6 +1,6 @@
-# MDSpammers
-Medium spammers dengan 30 Tools Spammers (SMS,Call,Wa).
-# Spam available
+# FREE FIRE
+Medium Ammers dengan 30 Tools Ammers (SMS,Call,Wa).
+# Apam available
 ```
 - asakita
 - sunchilla 
