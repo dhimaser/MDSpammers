@@ -26,7 +26,8 @@ def logo():
    __ _ _ __  _ __  ___ _ _ ___      %sAuthor by %sTokicoy%s
   / _` | '  \| '  \/ -_) '_(_-<      %sGithub %sNothing%s
   \__,_|_|_|_|_|_|_\___|_| /__/      %sYoutube %sAcinakongame%s
-   Anggur Merah Cap Orang Tua        %sTools HECK ID Free Fire"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
+   Anggur Merah Cap Orang Tua        %sTools Bocil HECK ID Free Fire"""%(qu,pu,ku,qu,pu,ku,qu,pu,ku,qu,qu)
+
 #-------------------------------Input Function------------------------------------------
 def input():
   global nom
@@ -77,9 +78,9 @@ def wintershop():
 def datesy():
 # to = requests.post("https://www.datesy.com/",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'},data={'z':'phonelogingetpin','country':'62','number':nom,'ppclienttoken':'f61627ef220c356b6bf10e28a948c5e6'})
  #if json.loads(to.text)["success"] == True:
-  sukses("6","sms","datesy")
+  sukses("6","bocil heck","datesy")
  #else:
-  #gagal("6","sms","datesy")
+  #gagal("6","bocil heck","datesy")
 def thaifriendly():
  tes = requests.post("https://www.thaifriendly.com/pl/index.php",headers={'user-agent':'Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36'},data={'z':'phonelogingetpin','country':'62','number':nom,'ppclienttoken':'igq39qdc9rwk2ax1zrgdq'})
  if json.loads(tes.text)["success"] == True:
